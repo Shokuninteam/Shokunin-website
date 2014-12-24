@@ -26,42 +26,52 @@
         <img id="julie-pic" src="img/profile-jh.png" class="head-pic" ng-click="clickJulie()">
       </div>
       <div id="main-block" class="col-sm-7 col-md-7 col-lg-7">
-        <div id="frank-block">
-          <h2>Frank Bassard</h2>
+        <div id="personnal-block" ng-show="showPersonnalBlock">
+          <h2>{{current.name}}</h2>
           <p>
-            <img src="img/svg/male154.svg" class="gender-pic">
-           | 25 yo | Software developer
+            <img ng-src="img/svg/{{current.genrePic}}" class="gender-pic">
+            {{current.description}}
           </p>
           <h2>Roles</h2>
-          <p>- Web & Mobile developer</p>
-          <p>- Business managment</p>
-          <p>- UX & UI</p>
-          <p>- Advisor</p>
+          <div ng-repeat="role in current.roles">
+            <p>- {{role}}</p>
+          </div>
           <h2>Hobbies</h2>
-          <p>Physical conditioning | Coffee | Tech | Design</p>
-          <h2>Social</h2>
-
+          <p>{{current.hobbies}}</p>
           <h2>Contact</h2>
-
           <div class="container-fluid">
             <div class="row">
               <div class="col-md-4">
-                <div><a href="https://twitter.com/MyRulz89"><img class="social-pic" src="img/svg/twitter21.svg"> Twitter</a></div>
-                <div><a href="https://github.com/BassardF"><img class="social-pic" src="img/svg/github13.svg"> GitHub</a></div>
-                <div><a href="https://www.facebook.com/frank.bassard"><img class="social-pic" src="img/svg/facebook29.svg"> Facebook</a></div>
+                <div ng-repeat="social in current.contacts.col1">
+                  <div><a href="{{social.url}}"><img class="social-pic" ng-src="{{social.pic}}"> {{social.name}}</a></div>
+                </div>
               </div>
               <div class="col-md-4">
-                <div><a href="https://www.linkedin.com/in/frankbassard"><img class="social-pic" src="img/svg/linkedin11.svg"> LinkedIn</a></div>
-                  <div><a href="http://www.meetup.com/members/182921267/"><img class="social-pic" src="img/svg/meetup.svg"> MeetUp</a></div>
+                <div ng-repeat="social in current.contacts.col2">
+                  <div><a href="{{social.url}}"><img class="social-pic" ng-src="{{social.pic}}"> {{social.name}}</a></div>
+                </div>
               </div>
               <div class="col-md-4">
-                <div><a href="mailto: f.bassard@gmail.com"><img class="social-pic" src="img/svg/mail59.svg"> Mail</a></div>
-                <div><a src="#"><img class="social-pic" src="img/svg/facebook30.svg"> Map</a></div>
+                <div ng-repeat="social in current.contacts.col3">
+                  <div><a href="{{social.url}}"><img class="social-pic" ng-src="{{social.pic}}"> {{social.name}}</a></div>
+                </div>
               </div>
             </div>
           </div>
 
         </div>
+
+        <div id="project-block" ng-show="showProjectBlock">
+          <h2>{{project.name}}</h2>
+          <p>{{project.description}}</p>
+          <h2>Architecture</h2>
+          <img ng-src="img/{{project.img}}">
+          <h2>Repository</h2>
+          <div ng-repeat="social in project.contacts">
+            <div><a href="{{social.url}}"><img class="social-pic" ng-src="{{social.pic}}"> {{social.name}}</a></div>
+          </div>
+        </div>
+
       </div>
     </div>
   </div>

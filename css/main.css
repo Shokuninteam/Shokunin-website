@@ -229,3 +229,7 @@ textarea {
         page-break-after: avoid;
     }
 }
+
+#links{
+  display : none;
+}

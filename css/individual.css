@@ -17,6 +17,11 @@ p{
   font-family: customRegular !important;
 }
 
+a:hover{
+  cursor : pointer;
+  text-decoration : none;
+}
+
 #global-block{
   margin-top : 50px;
 }

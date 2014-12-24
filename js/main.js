@@ -117,30 +117,40 @@ var DRAW = {
       document.body.style.cursor = "pointer";
     }, function(){
       document.body.style.cursor = "default";
+    }).click(function(){
+      DRAW.frankClick();
     });
 
     DRAW.nodes.mohamedPic = paper.image("img/profile-mm.png", width / 4 - 40, top + 2 * newHeight /4 - 20, 80, 80).attr({"opacity" : 0}).hover(function(){
       document.body.style.cursor = "pointer";
     }, function(){
       document.body.style.cursor = "default";
+    }).click(function(){
+      DRAW.mohamedClick();
     });
 
     DRAW.nodes.juliePic = paper.image("img/profile-jh.png", width / 4 - 40, top + 3 * newHeight /4 - 20, 80, 80).attr({"opacity" : 0}).hover(function(){
       document.body.style.cursor = "pointer";
     }, function(){
       document.body.style.cursor = "default";
+    }).click(function(){
+      DRAW.julieClick();
     });
 
     DRAW.nodes.spreadCircle = paper.circle(3 * width / 4,  top + 2 * newHeight /4, 40).attr({"fill" : "teal" , "stroke" : "teal", "opacity" : 0}).hover(function(){
       document.body.style.cursor = "pointer";
     }, function(){
       document.body.style.cursor = "default";
+    }).click(function(){
+      DRAW.spreadClick();
     });
 
     DRAW.nodes.spreadText = paper.text(3 * width / 4,  top + 2 * newHeight /4, "Spread").attr({"font-size" : 20 , "stroke"  : "white", "opacity" : 0}).hover(function(){
       document.body.style.cursor = "pointer";
     }, function(){
       document.body.style.cursor = "default";
+    }).click(function(){
+      DRAW.spreadClick();
     });
 
     var texts = {
@@ -235,6 +245,22 @@ var DRAW = {
     var placeNodeSCircle = Raphael.animation({"cx" : 3 * width/4}, time, "linear");
     DRAW.nodes.centerNodeCircle.animate(placeNodeSCircle);
     DRAW.nodes.centerNodeText.animate(placeNodeSText);
+  },
+
+  spreadClick : function(){
+    $("#show-spread")[0].click();
+  },
+
+  frankClick : function(){
+    $("#show-frank")[0].click();
+  },
+
+  mohamedClick : function(){
+    $("#show-mohamed")[0].click();
+  },
+
+  julieClick : function(){
+    $("#show-julie")[0].click();
   }
 
 }
