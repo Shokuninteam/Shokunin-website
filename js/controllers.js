@@ -154,15 +154,18 @@ challengeApp.controller('IndividualCtrl', function ($scope, $http) {
     name : 'Spread',
     description : 'Spread is our current biggest project. This mobile application will allow users to spread their thoughts on a local and global scale. The releveance of each thought will be at user\'s discretion only, you will decide the scale that a thought deserve.',
     img : 'archi.png',
-    contacts : [{
-      url : 'https://github.com/Shokuninteam/Spread',
-      pic : 'img/svg/github13.svg',
-      name : 'GitHub : Server',
-    }, {
-      url : '#',
-      pic : 'img/svg/github13.svg',
-      name : 'GitHub : Client',
-    }]
+    contacts : {
+      col1 : [{
+        url : 'https://github.com/Shokuninteam/Spread',
+        pic : 'img/svg/hosting.svg',
+        name : 'GitHub : Server',
+      }],
+      col2 :[{
+        url : '#',
+        pic : 'img/svg/apple4.svg',
+        name : 'GitHub : Client',
+      }]
+    }
   }
 
   $scope.project = spread;

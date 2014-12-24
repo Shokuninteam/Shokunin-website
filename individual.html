@@ -67,8 +67,19 @@
           <h2>Architecture</h2>
           <img ng-src="img/{{project.img}}">
           <h2>Repository</h2>
-          <div ng-repeat="social in project.contacts">
-            <div><a href="{{social.url}}"><img class="social-pic" ng-src="{{social.pic}}"> {{social.name}}</a></div>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-6">
+                <div ng-repeat="social in project.contacts.col1">
+                  <div><a href="{{social.url}}"><img class="social-pic" ng-src="{{social.pic}}"> {{social.name}}</a></div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div ng-repeat="social in project.contacts.col2">
+                  <div><a href="{{social.url}}"><img class="social-pic" ng-src="{{social.pic}}"> {{social.name}}</a></div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
