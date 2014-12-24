@@ -113,39 +113,39 @@ challengeApp.controller('IndividualCtrl', function ($scope, $http) {
   julie = {
     name : 'Julie Huguet',
     genrePic : 'female128.svg',
-    description : '| 25 yo | Software developer',
+    description : '| 27 yo | Software developer',
     roles : [
-    'Web & Mobile developer',
-    'Business managment',
-    'UX & UI',
-    'Advisor'
+    'iOS/Android developer',
+    'Community manager',
+    'UI & Design',
+    'Ideas igniter'
     ],
-    hobbies : 'Physical conditioning | Coffee | Tech | Design',
+    hobbies : 'Sciences | Travel | Sport & Nutrition | Tea & Coffee | Nature',
     contacts : {
       col1 : [{
-        url : 'https://twitter.com/MyRulz89',
+        url : 'https://twitter.com/JHuguet87',
         pic : 'img/svg/twitter21.svg',
         name : 'Twitter',
       }, {
-        url : 'https://github.com/BassardF',
+        url : 'https://github.com/LittleCatBear',
         pic : 'img/svg/github13.svg',
         name : 'GitHub',
       }, {
-        url : 'https://www.facebook.com/frank.bassard',
+        url : 'https://www.facebook.com/julie.huguet.104',
         pic : 'img/svg/facebook29.svg',
         name : 'Facebook',
       }],
       col2 : [{
-        url : 'https://www.linkedin.com/in/frankbassard',
+        url : 'https://www.linkedin.com/pub/julie-huguet/78/909/4a4',
         pic : 'img/svg/linkedin11.svg',
         name : 'LinkedIn',
       }, {
-        url : 'http://www.meetup.com/members/182921267/',
+        url : 'http://www.meetup.com/members/182921399/',
         pic : 'img/svg/meetup.svg',
         name : 'MeetUp',
       }],
       col3 : [{
-        url : 'mailto: f.bassard@gmail.com',
+        url : 'mailto: j.huguet9@gmail.com',
         pic : 'img/svg/mail59.svg',
         name : 'Mail',
       }, {
