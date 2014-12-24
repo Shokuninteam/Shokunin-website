@@ -1,0 +1,125 @@
+@font-face {
+  font-family: customFont;
+  src: url(../fonts/raleway/Raleway-Thin.ttf);
+}
+
+@font-face {
+  font-family: customRegular;
+  src: url(../fonts/raleway/Raleway-medium.ttf);
+}
+
+*{
+  color : #222222;
+  font-family: customFont !important;
+}
+
+p{
+  font-family: customRegular !important;
+}
+
+#global-block{
+  margin-top : 50px;
+}
+
+#main-block{
+  border-left : solid 1px lightgrey;
+}
+
+#head-block{
+  padding : 0px;
+}
+
+#cursor{
+  position : absolute;
+  float : right;
+  height : 40px;
+  width : 20px;
+  opacity : 0.7;
+}
+
+.cursor-spread{
+  top : 73px;
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.cursor-frank{
+  top : 209px;
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.cursor-mohamed{
+  top : 301px;
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.cursor-julie{
+  top : 393px;
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+#cursor-block{
+  width : 20px;
+  margin-right : 0px;
+}
+
+#head-block > div{
+  display : inline-block;
+}
+
+#head-block h3{
+  text-align : center;
+  font-weight : bold;
+}
+
+.head-pic{
+  display : block;
+  margin-left : auto;
+  margin-right : auto;
+  height : 80px;
+  width : 80px;
+  margin-top : 10px;
+  margin-bottom : 10px;
+  opacity : 0.5;
+}
+
+.head-pic:hover{
+  cursor: pointer;
+  opacity : 1;
+}
+
+.selected{
+  opacity : 1;
+}
+
+.shokunin-pic{
+  display : block;
+  margin-left : auto;
+  margin-right : auto;
+  height : 40px;
+  width : 40px;
+  margin-top : 10px;
+  margin-bottom : 10px;
+}
+
+.social-pic, .gender-pic{
+  height : 30px;
+  width : 30px;
+  opacity : 0.7;
+}
+
+.social-pic:hover{
+  opacity : 1;
+  cursor:  pointer;
+}

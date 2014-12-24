@@ -1,0 +1,70 @@
+<html ng-app="shokuninApp">
+<head>
+
+  <title>Challenge</title>
+
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="css/individual.css">
+
+  <script src="js/vendor/jquery-1.11.1.min.js"></script>
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="js/controllers.js"></script>
+
+</head>
+<body ng-controller="IndividualCtrl">
+
+  <div class="container-fluid">
+    <div id="global-block" class="row">
+      <div id="head-block" class="col-sm-2 col-sm-offset-1 col-md-2 col-md-offset-1 col-lg-2 col-lg-offset-1">
+        <img id="cursor" src="img/cursor.png">
+        <h3>Projects</h3>
+        <img id="spread-pic" src="img/spread.png" class="head-pic" ng-click="clickSpread()">
+        <h3>Members</h3>
+        <img id="frank-pic" src="img/profile-fb.png" class="head-pic" ng-click="clickFrank()">
+        <img id="mohamed-pic" src="img/profile-mm.png" class="head-pic" ng-click="clickMohamed()">
+        <img id="julie-pic" src="img/profile-jh.png" class="head-pic" ng-click="clickJulie()">
+      </div>
+      <div id="main-block" class="col-sm-7 col-md-7 col-lg-7">
+        <div id="frank-block">
+          <h2>Frank Bassard</h2>
+          <p>
+            <img src="img/svg/male154.svg" class="gender-pic">
+           | 25 yo | Software developer
+          </p>
+          <h2>Roles</h2>
+          <p>- Web & Mobile developer</p>
+          <p>- Business managment</p>
+          <p>- UX & UI</p>
+          <p>- Advisor</p>
+          <h2>Hobbies</h2>
+          <p>Physical conditioning | Coffee | Tech | Design</p>
+          <h2>Social</h2>
+
+          <h2>Contact</h2>
+
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-4">
+                <div><a href="https://twitter.com/MyRulz89"><img class="social-pic" src="img/svg/twitter21.svg"> Twitter</a></div>
+                <div><a href="https://github.com/BassardF"><img class="social-pic" src="img/svg/github13.svg"> GitHub</a></div>
+                <div><a href="https://www.facebook.com/frank.bassard"><img class="social-pic" src="img/svg/facebook29.svg"> Facebook</a></div>
+              </div>
+              <div class="col-md-4">
+                <div><a href="https://www.linkedin.com/in/frankbassard"><img class="social-pic" src="img/svg/linkedin11.svg"> LinkedIn</a></div>
+                  <div><a href="http://www.meetup.com/members/182921267/"><img class="social-pic" src="img/svg/meetup.svg"> MeetUp</a></div>
+              </div>
+              <div class="col-md-4">
+                <div><a href="mailto: f.bassard@gmail.com"><img class="social-pic" src="img/svg/mail59.svg"> Mail</a></div>
+                <div><a src="#"><img class="social-pic" src="img/svg/facebook30.svg"> Map</a></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
