@@ -17,7 +17,7 @@ challengeApp.controller('IndividualCtrl', function ($scope, $http) {
 
   var addresses = {
     frank : '292 Wakefield Street, Te Aro, Wellington 6011',
-    mohamed : 'Seine saint denis, France',
+    mohamed : 'Paris, France',
     julie : '292 Wakefield Street, Te Aro, Wellington 6011'
   }
   var frank = {
@@ -68,39 +68,26 @@ challengeApp.controller('IndividualCtrl', function ($scope, $http) {
   mohamed = {
     name : 'Mohamed Mokhtari',
     genrePic : 'male154.svg',
-    description : '| 25 yo | Software developer',
+    description : '| 24 yo | Software developer',
     roles : [
     'Web & Mobile developer',
     'Business managment',
     'UX & UI',
     'Advisor'
     ],
-    hobbies : 'Physical conditioning | Coffee | Tech | Design',
+    hobbies : 'Travel | Movie | Tech | Fashion ',
     contacts : {
       col1 : [{
-        url : 'https://twitter.com/MyRulz89',
-        pic : 'img/svg/twitter21.svg',
-        name : 'Twitter',
-      }, {
-        url : 'https://github.com/BassardF',
+        url : 'https://github.com/mohamedMok',
         pic : 'img/svg/github13.svg',
         name : 'GitHub',
       }, {
-        url : 'https://www.facebook.com/frank.bassard',
-        pic : 'img/svg/facebook29.svg',
-        name : 'Facebook',
-      }],
-      col2 : [{
-        url : 'https://www.linkedin.com/in/frankbassard',
+        url : 'https://www.linkedin.com/pub/mohamed-mokhtari/5b/647/176',
         pic : 'img/svg/linkedin11.svg',
         name : 'LinkedIn',
-      }, {
-        url : 'http://www.meetup.com/members/182921267/',
-        pic : 'img/svg/meetup.svg',
-        name : 'MeetUp',
       }],
-      col3 : [{
-        url : 'mailto: f.bassard@gmail.com',
+      col2 : [{
+        url : 'mailto: mohamed.mokhtari.pro@gmail.com',
         pic : 'img/svg/mail59.svg',
         name : 'Mail',
       }, {
