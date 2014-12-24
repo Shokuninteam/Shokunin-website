@@ -53,7 +53,7 @@
               </div>
               <div class="col-md-4">
                 <div ng-repeat="social in current.contacts.col3">
-                  <div><a href="{{social.url}}"><img class="social-pic" ng-src="{{social.pic}}"> {{social.name}}</a></div>
+                  <div><a target="_blank" href="{{social.url}}"><img class="social-pic" ng-src="{{social.pic}}"> {{social.name}}</a></div>
                 </div>
               </div>
             </div>
@@ -66,17 +66,17 @@
           <p>{{project.description}}</p>
           <h2>Architecture</h2>
           <img ng-src="img/{{project.img}}">
-          <h2>Repository</h2>
+          <h2>Repositories</h2>
           <div class="container-fluid">
             <div class="row">
               <div class="col-md-6">
                 <div ng-repeat="social in project.contacts.col1">
-                  <div><a href="{{social.url}}"><img class="social-pic" ng-src="{{social.pic}}"> {{social.name}}</a></div>
+                  <div><a href="{{social.url}}" target="_blank"><img class="social-pic" ng-src="{{social.pic}}"> {{social.name}}</a></div>
                 </div>
               </div>
               <div class="col-md-6">
                 <div ng-repeat="social in project.contacts.col2">
-                  <div><a href="{{social.url}}"><img class="social-pic" ng-src="{{social.pic}}"> {{social.name}}</a></div>
+                  <div><a href="{{social.url}}" target="_blank"><img class="social-pic" ng-src="{{social.pic}}"> {{social.name}}</a></div>
                 </div>
               </div>
             </div>

@@ -15,13 +15,18 @@ challengeApp.controller('IndividualCtrl', function ($scope, $http) {
     }
   }
 
+  var addresses = {
+    frank : '292 Wakefield Street, Te Aro, Wellington 6011',
+    mohamed : 'Seine saint denis, France',
+    julie : '292 Wakefield Street, Te Aro, Wellington 6011'
+  }
   var frank = {
     name : 'Frank Bassard',
     genrePic : 'male154.svg',
     description : '| 25 yo | Software developer',
     roles : [
       'Web & Mobile developer',
-      'Business managment',
+      'Business management',
       'UX & UI',
       'Advisor'
     ],
@@ -54,7 +59,7 @@ challengeApp.controller('IndividualCtrl', function ($scope, $http) {
         pic : 'img/svg/mail59.svg',
         name : 'Mail',
       }, {
-        url : '#',
+        url : 'https://www.google.com/maps?q=' + addresses.frank.replace(" ", "+"),
         pic : 'img/svg/facebook30.svg',
         name : 'Map',
       }]
@@ -99,7 +104,7 @@ challengeApp.controller('IndividualCtrl', function ($scope, $http) {
         pic : 'img/svg/mail59.svg',
         name : 'Mail',
       }, {
-        url : '#',
+        url : 'https://www.google.com/maps?q=' + addresses.mohamed.replace(" ", "+"),
         pic : 'img/svg/facebook30.svg',
         name : 'Map',
       }]
@@ -144,7 +149,7 @@ challengeApp.controller('IndividualCtrl', function ($scope, $http) {
         pic : 'img/svg/mail59.svg',
         name : 'Mail',
       }, {
-        url : '#',
+        url : 'https://www.google.com/maps?q=' + addresses.julie.replace(" ", "+"),
         pic : 'img/svg/facebook30.svg',
         name : 'Map',
       }]
