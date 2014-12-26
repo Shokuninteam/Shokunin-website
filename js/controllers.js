@@ -158,7 +158,19 @@ challengeApp.controller('IndividualCtrl', function ($scope, $http) {
         name : 'GitHub : Client',
       }]
     }
-  }
+  },
+  spur = {
+    name : 'Spur',
+    description : 'Spur is a nice small mobile project.Its purpose is to keep you motivated and to help you achieve your goals, whatever they are',
+    img : 'archi.png',
+    contacts : {
+      col1 : [{
+        url : 'https://github.com/Shokuninteam/Spur',
+        pic : 'img/svg/hosting.svg',
+        name : 'GitHub',
+      }]
+    }
+  };
 
   $scope.project = spread;
   $scope.current = frank;
@@ -170,6 +182,17 @@ challengeApp.controller('IndividualCtrl', function ($scope, $http) {
     $("#spread-pic").addClass("selected");
     $('#cursor').removeClass();
     $('#cursor').addClass("cursor-spread");
+    $scope.project = spread;
+    $scope.showPersonnalBlock = false;
+    $scope.showProjectBlock = true;
+  }
+
+  $scope.clickSpur = function(){
+    $(".head-pic").removeClass("selected");
+    $("#spur-pic").addClass("selected");
+    $('#cursor').removeClass();
+    $('#cursor').addClass("cursor-spur");
+    $scope.project = spur;
     $scope.showPersonnalBlock = false;
     $scope.showProjectBlock = true;
   }
@@ -206,6 +229,7 @@ challengeApp.controller('IndividualCtrl', function ($scope, $http) {
 
   var param = getUrlParameter('show');
   if (param === "spread") $scope.clickSpread();
+  else if (param === "spur") $scope.clickSpur();
   else if (param === "frank") $scope.clickFrank();
   else if (param === "mohamed") $scope.clickMohamed();
   else if (param === "julie") $scope.clickJulie();

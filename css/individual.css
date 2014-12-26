@@ -50,15 +50,15 @@ a:hover{
   transition: 0.5s ease-in-out;
 }
 
-.cursor-frank{
-  top : 209px;
+.cursor-spur{
+  top : 165px;
   -webkit-transition: 0.5s ease-in-out;
   -moz-transition: 0.5s ease-in-out;
   -o-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
 }
 
-.cursor-mohamed{
+.cursor-frank{
   top : 301px;
   -webkit-transition: 0.5s ease-in-out;
   -moz-transition: 0.5s ease-in-out;
@@ -66,8 +66,16 @@ a:hover{
   transition: 0.5s ease-in-out;
 }
 
-.cursor-julie{
+.cursor-mohamed{
   top : 393px;
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.cursor-julie{
+  top : 485px;
   -webkit-transition: 0.5s ease-in-out;
   -moz-transition: 0.5s ease-in-out;
   -o-transition: 0.5s ease-in-out;
