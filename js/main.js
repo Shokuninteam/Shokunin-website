@@ -137,7 +137,7 @@ var DRAW = {
       DRAW.julieClick();
     });
 
-    DRAW.nodes.spreadCircle = paper.circle(3 * width / 4,  top + 2 * newHeight /4, 40).attr({"fill" : "teal" , "stroke" : "teal", "opacity" : 0}).hover(function(){
+    DRAW.nodes.spreadCircle = paper.circle(3 * width / 4,  top + newHeight /3, 40).attr({"fill" : "teal" , "stroke" : "teal", "opacity" : 0}).hover(function(){
       document.body.style.cursor = "pointer";
     }, function(){
       document.body.style.cursor = "default";
@@ -145,12 +145,20 @@ var DRAW = {
       DRAW.spreadClick();
     });
 
-    DRAW.nodes.spreadText = paper.text(3 * width / 4,  top + 2 * newHeight /4, "Spread").attr({"font-size" : 20 , "stroke"  : "white", "opacity" : 0}).hover(function(){
+    DRAW.nodes.spreadText = paper.text(3 * width / 4,  top + newHeight /3, "Spread").attr({"font-size" : 20 , "stroke"  : "white", "opacity" : 0}).hover(function(){
       document.body.style.cursor = "pointer";
     }, function(){
       document.body.style.cursor = "default";
     }).click(function(){
       DRAW.spreadClick();
+    });
+
+    DRAW.nodes.spurPic = paper.image("img/spur.png", 3 * width / 4 - 40, top + 2 * newHeight /3 - 40, 80, 80).attr({"opacity" : 0}).hover(function(){
+      document.body.style.cursor = "pointer";
+    }, function(){
+      document.body.style.cursor = "default";
+    }).click(function(){
+      DRAW.spurClick();
     });
 
     var texts = {
@@ -184,6 +192,7 @@ var DRAW = {
     DRAW.nodes.juliePic.animate(hide);
     DRAW.nodes.membersBorder.animate(toGrey);
 
+    DRAW.nodes.spurPic.animate(hide);
     DRAW.nodes.spreadCircle.animate(hide);
     DRAW.nodes.spreadText.animate(hide);
     DRAW.nodes.projectsBorder.animate(toGrey);
@@ -208,6 +217,7 @@ var DRAW = {
     DRAW.nodes.juliePic.animate(show);
     DRAW.nodes.membersBorder.animate(toTeal);
 
+    DRAW.nodes.spurPic.animate(hide);
     DRAW.nodes.spreadCircle.animate(hide);
     DRAW.nodes.spreadText.animate(hide);
     DRAW.nodes.projectsBorder.animate(toGrey);
@@ -235,6 +245,7 @@ var DRAW = {
     DRAW.nodes.juliePic.animate(hide);
     DRAW.nodes.membersBorder.animate(toGrey);
 
+    DRAW.nodes.spurPic.animate(show);
     DRAW.nodes.spreadCircle.animate(show);
     DRAW.nodes.spreadText.animate(show);
     DRAW.nodes.projectsBorder.animate(toTeal);
@@ -249,6 +260,10 @@ var DRAW = {
 
   spreadClick : function(){
     $("#show-spread")[0].click();
+  },
+
+   spurClick : function(){
+    $("#show-spur")[0].click();
   },
 
   frankClick : function(){
