@@ -137,15 +137,7 @@ var DRAW = {
       DRAW.julieClick();
     });
 
-    DRAW.nodes.spreadCircle = paper.circle(3 * width / 4,  top + newHeight /3, 40).attr({"fill" : "teal" , "stroke" : "teal", "opacity" : 0}).hover(function(){
-      document.body.style.cursor = "pointer";
-    }, function(){
-      document.body.style.cursor = "default";
-    }).click(function(){
-      DRAW.spreadClick();
-    });
-
-    DRAW.nodes.spreadText = paper.text(3 * width / 4,  top + newHeight /3, "Spread").attr({"font-size" : 20 , "stroke"  : "white", "opacity" : 0}).hover(function(){
+    DRAW.nodes.spreadPic = paper.image("img/logo-spread.png", 3 * width / 4 - 40,  top + newHeight /3 - 40, 80, 80).attr({ "opacity" : 0}).hover(function(){
       document.body.style.cursor = "pointer";
     }, function(){
       document.body.style.cursor = "default";
@@ -193,8 +185,7 @@ var DRAW = {
     DRAW.nodes.membersBorder.animate(toGrey);
 
     DRAW.nodes.spurPic.animate(hide);
-    DRAW.nodes.spreadCircle.animate(hide);
-    DRAW.nodes.spreadText.animate(hide);
+    DRAW.nodes.spreadPic.animate(hide);
     DRAW.nodes.projectsBorder.animate(toGrey);
 
     DRAW.nodeSPosition = 2;
@@ -218,8 +209,7 @@ var DRAW = {
     DRAW.nodes.membersBorder.animate(toTeal);
 
     DRAW.nodes.spurPic.animate(hide);
-    DRAW.nodes.spreadCircle.animate(hide);
-    DRAW.nodes.spreadText.animate(hide);
+    DRAW.nodes.spreadPic.animate(hide);
     DRAW.nodes.projectsBorder.animate(toGrey);
 
     var time = DRAW.nodeSPosition === 3 ? 400 : 200;
@@ -246,8 +236,7 @@ var DRAW = {
     DRAW.nodes.membersBorder.animate(toGrey);
 
     DRAW.nodes.spurPic.animate(show);
-    DRAW.nodes.spreadCircle.animate(show);
-    DRAW.nodes.spreadText.animate(show);
+    DRAW.nodes.spreadPic.animate(show);
     DRAW.nodes.projectsBorder.animate(toTeal);
 
     var time = DRAW.nodeSPosition === 1 ? 400 : 200;
